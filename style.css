@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.panel{
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.7s ease;
+}
+.panel h3{
+    font-size: 15px;
+    transform: translateY(550px);
+    background-color: orange;
+    padding: 5px;
+    border-radius: 15px;
+    opacity: 0;
+    text-align: center;
+    
+}
+.panel.active{
+    flex: 0.4;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
